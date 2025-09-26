@@ -15,19 +15,19 @@ function convertToBool(text, trueValue = 'true') {
 
 module.exports = {
   // ===== BOT CORE SETTINGS =====
-  SESSION_ID: settings.SESSION_ID || process.env.SESSION_ID || "",
+  SESSION_ID: settings.SESSION_ID || process.env.SESSION_ID || "{"noiseKey":{"private":{"type":"Buffer","data":"KHgNWxGZ16JpsoWp3q3N+BUENys3UEiRNra6q4aw4kk="},"public":{"type":"Buffer","data":"Fd0UC7KOWuihi4rGw7UdMqpXN2/RvILFS509s/4yjE0="}},"pairingEphemeralKeyPair":{"private":{"type":"Buffer","data":"EFNNbmfWTy/xVeMdtboFySu8ecVia0FU+PHREvbz0Go="},"public":{"type":"Buffer","data":"80IkrFrOgGjrH0jdggM08oujtmwhkWDylr7/wq903XY="}},"signedIdentityKey":{"private":{"type":"Buffer","data":"wPFSosg38ogARywdRFPM1fHML2KsemUdxiZflY6lBUU="},"public":{"type":"Buffer","data":"aRPIraWD2gJcuW2l8xebDHOh/C5ZY3ubxSXoZUIFHE4="}},"signedPreKey":{"keyPair":{"private":{"type":"Buffer","data":"gMPpMw+fQwiAedPy9IootSonJfCIohDMlqCeOqw6CEU="},"public":{"type":"Buffer","data":"UbQtGOqSTMt03ECOQUkd3hDgYciMvb056FsEUhnLDUM="}},"signature":{"type":"Buffer","data":"Nb5HG72K7VpmfrAFMC3LHn98oq5od+wUAX4wm417i7F7b9JHPuQeijrXKq0v4DJ1Y4T6e/or+/u9WOzVSPURCw=="},"keyId":1},"registrationId":186,"advSecretKey":"jYjML98/RcqlCrpgOcKniPMt0qW+fMh8aqONd2LYyNA=","processedHistoryMessages":[],"nextPreKeyId":31,"firstUnuploadedPreKeyId":31,"accountSyncCounter":0,"accountSettings":{"unarchiveChats":false},"registered":false,"routingInfo":{"type":"Buffer","data":"CAgIAg=="},"account":{"details":"CN3G3N4CEOH728YGGAQgACgA","accountSignatureKey":"9AF0hmc0KrLiFUMHmnHFxpapRuv/IvM7YjqWEcP/WCs=","accountSignature":"R2Bdhu8rSRx22vU/s6ONGi6iT50etUu4sv+DoFF41utb5Z4QjxEPC1e/2HtZUZFL2DaGt7YPAbDVlcIasqsRCw==","deviceSignature":"V7qHLpKsj5og8engG0f1QstblZ+lSL5XOdB/askXEY3AxDcL6YrOTFwPHFiZsX4f7qofG3RU6LS4+Rh28SHFCQ=="},"me":{"id":"233536773073:21@s.whatsapp.net"},"signalIdentities":[{"identifier":{"name":"233536773073:21@s.whatsapp.net","deviceId":0},"identifierKey":{"type":"Buffer","data":"BfQBdIZnNCqy4hVDB5pxxcaWqUbr/yLzO2I6lhHD/1gr"}}],"platform":"android","lastAccountSyncTimestamp":1758920168}",
   PREFIX: getConfig("PREFIX") || "." || settings.PREFIX,
   CHATBOT: getConfig("CHATBOT") || "on",
-  BOT_NAME: process.env.BOT_NAME || getConfig("BOT_NAME") || "ʟᴜᴄᴋʏ-xᴅ",
+  BOT_NAME: process.env.BOT_NAME || getConfig("BOT_NAME") || "TUPAC",
   MODE: getConfig("MODE") || process.env.MODE || "public",
   REPO: process.env.REPO || "https://github.com/Tomilucky218/Lucky-XD2",
   BAILEYS: process.env.BAILEYS || "@whiskeysockets/baileys",
 
   // ===== OWNER & DEVELOPER SETTINGS =====
-  OWNER_NUMBER: settings.OWNER_NUMBER || process.env.OWNER_NUMBER || "256789966218",
-  OWNER_NAME: process.env.OWNER_NAME || getConfig("OWNER_NAME") || "ʟᴜᴄᴋʏ ➋➊➑",
-  DEV: process.env.DEV || "256789966218",
-  DEVELOPER_NUMBER: '256789966218@s.whatsapp.net',
+  OWNER_NUMBER: settings.OWNER_NUMBER || process.env.OWNER_NUMBER || "233536773073",
+  OWNER_NAME: process.env.OWNER_NAME || getConfig("OWNER_NAME") || "TUPAC",
+  DEV: process.env.DEV || "233536773073",
+  DEVELOPER_NUMBER: '233536773073@s.whatsapp.net',
   MENU_AUDIO_URL: process.env.MENU_AUDIO_URL || 'https://files.catbox.moe/3v5i11.mp3',
 NEWSLETTER_JID: process.env.NEWSLETTER_JID || '120363420656466131@newsletter',
 
@@ -41,26 +41,26 @@ NEWSLETTER_JID: process.env.NEWSLETTER_JID || '120363420656466131@newsletter',
   LIVE_MSG: process.env.LIVE_MSG || "> ʙᴏᴛ ɪs sᴘᴀʀᴋɪɴɢ ᴀᴄᴛɪᴠᴇ ᴀɴᴅ ᴀʟɪᴠᴇ\n\n\nᴋᴇᴇᴘ ᴜsɪɴɢ ✦ʟᴜᴄᴋʏ xᴅ✦ ғʀᴏᴍ ʟᴜᴄᴋʏ ᴛᴇᴄʜ ʜᴜʙ  ɪɴᴄ⚡\n\n\n*© ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ - ᴍᴅ\n\n> ɢɪᴛʜᴜʙ :* github.com/Tomilucky218/Lucky-XD2",
 
   // ===== REACTION & STICKER SETTINGS =====
-  AUTO_REACT: process.env.AUTO_REACT || "false",
-  OWNER_REACT: process.env.OWNER_REACT || "false",
-  CUSTOM_REACT: process.env.CUSTOM_REACT || "false",
+  AUTO_REACT: process.env.AUTO_REACT || "true",
+  OWNER_REACT: process.env.OWNER_REACT || "true",
+  CUSTOM_REACT: process.env.CUSTOM_REACT || "true",
   CUSTOM_REACT_EMOJIS: getConfig("CUSTOM_REACT_EMOJIS") || process.env.CUSTOM_REACT_EMOJIS || "💝,💖,💗,❤️‍🩹,❤️,🧡,💛,💚,💙,💜,🤎,🖤,🤍",
   STICKER_NAME: process.env.STICKER_NAME || "ᴋʜᴀɴ-ᴍᴅ",
   AUTO_STICKER: process.env.AUTO_STICKER || "false",
 
   // ===== MEDIA & AUTOMATION =====
   AUTO_RECORDING: process.env.AUTO_RECORDING || "false",
-  AUTO_TYPING: process.env.AUTO_TYPING || "false",
+  AUTO_TYPING: process.env.AUTO_TYPING || "true",
   MENTION_REPLY: process.env.MENTION_REPLY || "false",
   MENU_IMAGE_URL: getConfig("MENU_IMAGE_URL") || "https://files.catbox.moe/4itzeu.jpg",
 
   // ===== SECURITY & ANTI-FEATURES =====
   ANTI_DELETE: process.env.ANTI_DELETE || "true",
-  ANTI_CALL: process.env.ANTI_CALL || "false",
-  ANTI_BAD_WORD: process.env.ANTI_BAD_WORD || "false",
+  ANTI_CALL: process.env.ANTI_CALL || "true",
+  ANTI_BAD_WORD: process.env.ANTI_BAD_WORD || "true",
   ANTI_LINK: process.env.ANTI_LINK || "true",
   ANTI_VV: process.env.ANTI_VV || "true",
-  DELETE_LINKS: process.env.DELETE_LINKS || "false",
+  DELETE_LINKS: process.env.DELETE_LINKS || "true",
   ANTI_DEL_PATH: process.env.ANTI_DEL_PATH || "inbox",
   ANTI_BOT: process.env.ANTI_BOT || "true",
   PM_BLOCKER: process.env.PM_BLOCKER || "true",
@@ -76,7 +76,7 @@ NEWSLETTER_JID: process.env.NEWSLETTER_JID || '120363420656466131@newsletter',
   GOODBYE: process.env.GOODBYE || "false",
   ADMIN_ACTION: process.env.ADMIN_ACTION || "false",
   version: process.env.version || "1.5.0",
-  TIMEZONE: settings.TIMEZONE || process.env.TIMEZONE || "Africa/Kampala",
+  TIMEZONE: settings.TIMEZONE || process.env.TIMEZONE || "Africa/Ghana",
 
   // ===== CATEGORY-SPECIFIC IMAGE URLs =====
   MENU_IMAGES: {
